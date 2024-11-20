@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfyshop - Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body class="light-theme">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Comfyshop</a>
+        <span id="currentDateTime" class="ml-3"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="indexb.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bproducts.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bshipping.html">Shipping Info</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="bcontacts.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main class="container mt-5" id="main-content">
+        <section class="contact-section">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <label for="rating" class="form-label">Rate Us:</label>
+                    <div class="rating-stars" id="rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg" id="send">Send</button>
+                </div>
+                <div id="response-message" class="text-center"></div>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer id="footer-container">
+        <p class="footer-text">&copy; 2024 Comfyshop | All rights reserved.</p>
+        <p class="footer-credits">Created by Alpysbayeva Aiymgul and Pernesh Zhanerke</p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        const stars = $('.rating-stars .star');
+        let selectedRating = 0;
+
+        stars.on('click', function() {
+            selectedRating = $(this).data('value');
+            updateStars(selectedRating);
+        });
+
+        function updateStars(rating) {
+            stars.removeClass('selected');
+            stars.each(function() {
+                if ($(this).data('value') <= rating) {
+                    $(this).addClass('selected');
+                }
+            });
+        }
+    </script>
+    <script> // Функция для смены цвета футера
+        // Функция для переключения темы футера
+       function toggleFooterThem() {
+           const footer = document.getElementById('footer-container');
+           footer.classList.toggle('footer-dark'); // Переключаем класс для темной темы
+       }
+       
+       // Пример использования: добавляем событие для кнопки смены темы
+       const themeToggleBtn = document.getElementById('theme-toggle-btn');
+       themeToggleBtn.addEventListener('click', toggleFooterThem);
+       
+           </script>
+    
+
+</body>
+
+
+</html>

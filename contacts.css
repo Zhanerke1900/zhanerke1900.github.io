@@ -1,0 +1,294 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeff3;
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    color: #333;
+    text-align: center;
+}
+
+body.theme-light {
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.3s ease;
+}
+
+body.theme-dark {
+    background-image: url('https://images.wallpaperscraft.com/image/single/texture_purple_surface_143768_3840x2400.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.3s ease;
+}
+
+.header-section {
+    background-color: #f4b6c2;
+    padding: 20px;
+}
+
+.main-heading {
+    margin: 0;
+    font-size: 36px;
+}
+
+
+#navbar {
+    margin-top: 10px;
+}/* Для светлой темы */
+/* Для светлой темы */
+body.light-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251); /* Цвет текста для светлой темы */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme .navbar-nav .nav-link:hover {
+    background-color: #bb8ca9cc; /* Цвет фона при наведении */
+    color: rgb(253, 167, 251); /* Цвет текста при наведении */
+    border-radius: 4px; /* Радиус скругления для квадрата */
+}
+
+/* Для темной темы */
+body.dark-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251); /* Цвет текста для темной темы */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover {
+    background-color: #d0a4c0cc; /* Цвет фона при наведении */
+    color: rgb(253, 167, 251); /* Цвет текста при наведении */
+    border-radius: 4px; /* Радиус скругления для квадрата */
+}
+
+/* Для активных ссылок в светлой теме */
+body.light-theme .navbar-nav .nav-item.active .nav-link {
+    color: rgb(4, 4, 4); /* Цвет текста для активной ссылки в светлой теме */
+}
+
+/* Для активных ссылок в темной теме */
+body.dark-theme .navbar-nav .nav-item.active .nav-link {
+    color: rgb(9, 9, 9); /* Цвет текста для активной ссылки в темной теме */
+}
+
+/* Для навигации (мобильная версия) */
+body.light-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251);
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251);
+}
+
+body.dark-theme .navbar-nav .nav-link:hover {
+    background-color: #f5a0d6cc;
+    color: rgb(253, 167, 251);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+#content-wrapper {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-heading {
+    color: #e38da8;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Увеличиваем ширину формы */
+.contact-form {
+    max-width: 900px !important; /* Увеличиваем максимальную ширину формы */
+    width: 100% !important; /* Сделаем форму гибкой */
+    margin: 0 auto !important; /* Центрируем форму */
+    padding: 30px !important; /* Увеличиваем внутренние отступы */
+    background-color: #ffffff !important; /* Белый фон формы */
+    border: 1px solid #ddd !important; /* Лёгкая граница для выделения формы */
+    border-radius: 8px !important; /* Сглаженные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; /* Тень для объёма */
+}
+
+/* Поля ввода и текстовая область */
+.contact-form .form-control {
+    width: 100% !important; /* Занимают всю доступную ширину */
+    padding: 15px !important; /* Увеличиваем внутренний отступ */
+    margin-bottom: 20px !important; /* Увеличиваем отступы между элементами */
+    font-size: 18px !important; /* Увеличиваем размер текста */
+    border: 1px solid #ccc !important; /* Граница поля */
+    border-radius: 5px !important; /* Сглаженные углы */
+    box-sizing: border-box !important; /* Учитываем padding в расчётах ширины */
+}
+
+/* Текстовые и input поля */
+.form-input,
+.form-textarea {
+    width: 100% !important; /* Занимают всю доступную ширину */
+    padding: 15px !important; /* Увеличиваем отступы */
+    margin-bottom: 20px !important; /* Увеличиваем отступы */
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important; /* Сглаженные углы */
+    box-sizing: border-box !important; /* Учитываем padding в расчётах ширины */
+    font-size: 18px !important; /* Увеличиваем размер текста */
+}
+
+
+/* Для лейблов в светлой теме */
+body.light-theme .form-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    color: #fcfbfb; /* Цвет для светлой темы */
+}
+
+/* Для лейблов в тёмной теме */
+body.dark-theme .form-label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    color: #121212; /* Цвет для тёмной темы */
+}
+
+/* Текстовые и input поля */
+.form-input,
+.form-textarea {
+    width: 100%; /* Занимают всю доступную ширину */
+    padding: 15px; /* Увеличиваем отступы */
+    margin-bottom: 20px; /* Увеличиваем отступы */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Сглаженные углы */
+    box-sizing: border-box; /* Учитываем padding в расчётах ширины */
+    font-size: 18px; /* Увеличиваем размер текста */
+}
+
+.form-textarea {
+    height: 150px;
+}
+
+.submit-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ff767a;
+    transform: scale(1.05);
+}
+
+#footer-container {
+    background-color: #f9f8f8;
+    color: #181717;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Стиль для тёмной темы */
+body.dark-theme #footer-container {
+    background-color: #5c3a5d;
+    color: #ffffff;
+}
+
+
+.footer-text,
+.footer-credits {
+    margin: 5px 0;
+}
+
+.footer-text,
+.footer-credits {
+    margin: 5px 0;
+}
+
+.rating-stars {
+    font-size: 3rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating-stars .star {
+    transition: color 0.2s ease;
+}
+
+.rating-stars .star.selected {
+    color: gold;
+}
+
+
+
+
+/* Общий стиль */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Высота страницы */
+    display: flex;
+    flex-direction: column; /* Контент сверху вниз */
+}
+
+/* Контейнер для основного содержимого */
+#main-content {
+    flex: 1; /* Заставляет основной контент занимать всё доступное пространство */
+    display: flex;
+    justify-content: center; /* Центрирование кнопки горизонтально */
+    align-items: center; /* Центрирование кнопки вертикально */
+    padding-bottom: 20px; /* Добавляем отступ снизу, чтобы кнопка не прилипала к футеру */
+}
+
+/* Кнопка */
+#send {
+    color: rgb(247, 241, 245);
+    padding: 10px 20px;
+    border: none;
+    background-color: #fa2ad093;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+#send:hover {
+    background-color: #f7ace7;
+    transform: scale(1.05);
+}
+
+/* Футер */
+#footer-container {
+    background-color: #f9f8f8;
+    color: #191919;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}

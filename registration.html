@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyShop</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Apply pink background with image */
+    body {
+        background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: #ffffff;
+    }
+
+    /* Navbar customization */
+    .navbar {
+        background-color: rgba(255, 182, 193, 0.8); /* Light pink with transparency */
+    }
+    .navbar a {
+        color: white;
+    }
+
+    /* Container customization */
+    .bg-secondary {
+        background-color: rgba(255, 182, 193, 0.9); /* Light pink with transparency */
+    }
+
+    /* Button customization */
+    .btn-light {
+        background-color: #ffb6c1; /* Light pink */
+        color: black;
+    }
+    .btn-outline-light {
+        color: #ffb6c1;
+        border-color: #ffb6c1;
+    }
+    .btn-outline-light:hover {
+        background-color: #ffb6c1;
+        color: black;
+    }
+
+    /* Table customization */
+    .table-dark {
+        background-color: rgba(255, 182, 193, 0.8); /* Light pink with transparency */
+        color: black;
+    }
+    .table-dark th, .table-dark td {
+        border-color: rgba(255, 105, 180, 0.5); /* Pink borders */
+    }
+</style>
+<body class="bg-dark text-white">
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-secondary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="indexb.html">ComfyShop</a>
+        <a href="indexb.html" class="btn btn-outline-light">Close Menu</a>
+    </div>
+</nav>
+
+<!-- Login Form -->
+<div class="container mt-5 pt-5" id="login-section">
+    <div class="bg-secondary p-4 rounded">
+        <h1 class="text-center">Login</h1>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="login-username" class="form-label"><b>Username</b></label>
+                <input type="text" class="form-control" id="login-username" placeholder="Enter username" required>
+            </div>
+            <div class="mb-3">
+                <label for="login-password" class="form-label"><b>Password</b></label>
+                <input type="password" class="form-control" id="login-password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Login</button>
+        </form>
+        <p id="login-message" class="text-center mt-3 text-danger"></p>
+        <button class="btn btn-outline-light w-100 mt-3" onclick="toggleForm()">Don't have an account? Register here</button>
+    </div>
+</div>
+
+<!-- Registration Form -->
+<div class="container mt-5 pt-5 d-none" id="register-section">
+    <div class="bg-secondary p-4 rounded">
+        <h1 class="text-center">Register</h1>
+        <form id="registerForm">
+            <div class="mb-3">
+                <label for="register-username" class="form-label"><b>Username</b></label>
+                <input type="text" class="form-control" id="register-username" placeholder="Choose a username" required>
+            </div>
+            <div class="mb-3">
+                <label for="register-password" class="form-label"><b>Password</b></label>
+                <input type="password" class="form-control" id="register-password" placeholder="Choose a password" required>
+            </div>
+            <div class="mb-3">
+                <label for="register-email" class="form-label"><b>Email</b></label>
+                <input type="email" class="form-control" id="register-email" placeholder="Enter your email" required>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Register</button>
+        </form>
+        <p id="register-message" class="text-center mt-3 text-danger"></p>
+        <button class="btn btn-outline-light w-100 mt-3" onclick="toggleForm()">Already have an account? Login here</button>
+    </div>
+</div>
+
+<!-- Contact Registration Form (After Login) -->
+<div class="container mt-5 pt-5 d-none" id="contact-registration">
+    <div class="bg-secondary p-4 rounded">
+        <h1 class="text-center">Leave Your Contact</h1>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="contact-name" class="form-label"><b>Your Name</b></label>
+                <input type="text" class="form-control" id="contact-name" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+                <label for="contact-phone" class="form-label"><b>Write Your Phone</b></label>
+                <input type="tel" class="form-control" id="contact-phone" placeholder="+7 (777) 777 77 77" pattern="\+7[0-9]{10}" required>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Submit</button>
+        </form>
+        <p id="contact-message" class="text-center mt-3 text-danger"></p>
+    </div>
+</div>
+
+<!-- Admin Panel -->
+<div class="container mt-5 pt-5 d-none" id="admin-panel">
+    <div class="bg-secondary p-4 rounded">
+        <h1 class="text-center">Admin Panel - User Management</h1>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- User rows will be dynamically populated -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<script src="registr.js"></script>
+
+</body>
+</html>

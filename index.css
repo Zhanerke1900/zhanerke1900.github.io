@@ -1,0 +1,382 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeff3;
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    color: #5d5456;
+    text-align: center;
+}
+
+.header-section {
+    background-color: #fe9bac;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-background {
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(51, 12, 12);
+    padding: 20px;
+}
+
+.main-heading {
+    margin: 0;
+    font-size: 36px;
+}
+
+#navbar {
+    margin-top: 10px;
+}
+
+/* Тексты в светлой теме */
+body.light-theme .navbar-nav .nav-link {
+    color: rgb(250, 154, 223);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Тексты в темной теме */
+body.dark-theme .navbar-nav .nav-link {
+    color: rgb(250, 154, 223);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Для наведения (темная тема) */
+body.dark-theme .navbar-nav .nav-link:hover {
+    color: #f4f4f4; 
+    background-color: #f5a0d6cc;
+    border-radius: 4px;
+}
+
+/* Для наведения (светлая тема) */
+body.light-theme .navbar-nav .nav-link:hover {
+    background-color: #f5a0d6cc;
+    border-radius: 4px;
+}
+
+
+
+body.light-theme .navbar-nav .nav-item.active .nav-link {
+    color: black; /* Белый текст для темной темы */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Для ссылки с классом active в темной теме */
+body.dark-theme .navbar-nav .nav-item.active .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+body.dark-theme .navbar-nav .nav-link.active:hover {
+    color: #fdfbfb; 
+    background-color: #f5a0d6cc;
+    border-radius: 4px;
+}
+
+/* Для наведения (светлая тема) */
+body.light-theme .navbar-nav .nav-link.active:hover {
+    background-color: #f5a0d6cc;
+    border-radius: 4px;
+}
+
+
+
+
+#content-wrapper {
+    padding: 20px;
+    background-color: #fefbfb;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgb(177, 91, 159);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-heading {
+    color: #f663a8e2;
+    font-size: 40px;
+    text-size-adjust: 50;
+}
+
+.paragraph-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #494353;
+}
+
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #b17b86;
+}
+
+
+
+body.theme-light {
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.3s ease;
+}
+
+body.theme-dark {
+    background-image: url('https://images.wallpaperscraft.com/image/single/texture_purple_surface_143768_3840x2400.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-image 0.3s ease;
+}
+
+.btn-toggle-theme {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    transition: background-color 0.3s, transform 0.3s;
+    color: rgb(248, 125, 211);
+    cursor: pointer;
+    background-color: #f99cf958;
+}
+
+
+
+body.dark-theme .btn-toggle-theme:hover{
+    background-color: #f7ace7;
+    transform: scale(1.05);
+}
+body.light-theme .btn-toggle-theme:hover{
+    background-color: #f7ace7;
+    transform: scale(1.05);
+
+}
+body.dark-theme .btn-toggle-theme {
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    color: rgb(253, 216, 242);
+    background-color: #676267d2;
+    cursor: pointer;
+}
+body.light-theme .btn-toggle-theme {
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    color: rgb(159, 9, 132);
+    background-color: #d089d0d2;
+      cursor: pointer;
+}
+
+
+
+
+/* Стиль для логотипа в светлой теме */
+body.light-theme .navbar-brand {
+    color: black; /* Черный текст для светлой темы */
+}
+
+/* Стиль для логотипа в темной теме */
+body.dark-theme .navbar-brand {
+    color: white; /* Белый текст для темной темы */
+}
+
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f9b1eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#logout-btn {
+    color: rgb(248, 125, 211);
+    position: absolute;
+    top: 13px;
+    left: 300px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #f99cf958;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+#logout-btn:hover {
+    background-color: #f7ace7;
+    transform: scale(1.05);
+}
+#timeButton {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    padding: 10px 20px;
+    color: rgb(248, 125, 211);
+    border: none;
+    background-color: #f99cf958;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#timeButton:hover {
+    background-color: #f7ace7;
+    transform: scale(1.05);
+}
+
+#timeDisplay {
+    position: absolute;
+    top: 130px;
+    left: 28px;
+    font-size: 16px;
+    color: #d59d9d;
+    text-shadow: 2px 2px 5px rgb(243, 135, 227);
+}
+
+#update-message-btn {
+    background-color: #f481d9; /* Розовый цвет */
+    color: white; /* Белый текст */
+    border: none; /* Убирает границу */
+    cursor: pointer; /* Курсор в виде руки */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(233, 114, 175, 0.884);
+}
+
+#update-message-btn:hover {
+    background-color: #ff14d8; /* Более темный розовый при наведении */
+    transform: scale(1.05);
+}
+
+.navbar,
+.card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: rgb(249, 247, 247);
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.faq-section {
+    margin-top: 50px;
+}
+
+.faq-header {
+    cursor: pointer;
+    background-color: #fdbafd58;
+    padding: 10px;
+    border: 1px solid #fffdffeb;
+    font-weight: bold;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+
+
+/* Стиль для модального окна */
+#purchaseForm .modal-content {
+    color: black; /* Текст всегда будет черным */
+    background-color: white; /* Фон всегда белый */
+}
+
+/* Стиль для кнопки закрытия */
+#purchaseForm .close-btn {
+    color: black; /* Текст кнопки закрытия всегда черный */
+}
+
+/* Стили для кнопки подтверждения */
+#purchaseForm .btn-confirm {
+    background-color: #007bff; /* Синий фон */
+    color: white; /* Белый текст */
+}
+
+
+
+
+#footer-container {
+    background-color: #f9f8f8;
+    color: #111010;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Стиль для тёмной темы */
+body.dark-theme #footer-container {
+    background-color: #5c3a5d;
+    color: #ffffff;
+}
+
+
+.footer-text,
+.footer-credits {
+    margin: 5px 0;
+}

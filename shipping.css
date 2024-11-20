@@ -1,0 +1,265 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeff3;
+    background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+    color: #fcfcfc;
+    text-align: center;
+}
+  body.theme-light {
+            background-image: url('https://instapik.ru/wp-content/uploads/2021/03/fon-dlya-fotoshopa-rozovyy-mramor.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: background-image 0.3s ease;
+        }
+        
+        body.theme-dark {
+            background-image: url('https://images.wallpaperscraft.com/image/single/texture_purple_surface_143768_3840x2400.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: background-image 0.3s ease;
+        }
+        
+.header-section {
+    background-color: #f4b6c2;
+    padding: 20px;
+}
+
+.main-heading {
+    margin: 0;
+    font-size: 36px;
+}
+
+#navbar {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #e38da8;
+    border-radius: 4px;
+}
+
+#content-wrapper {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-heading {
+    color: #e38da8;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.shipping-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.shipping-table th,
+.shipping-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.shipping-table th {
+    background-color: #f4b6c2;
+    color: white;
+}
+
+.shipping-table td {
+    background-color: #f4b6c2;
+    color: white;
+}
+
+
+
+
+/* Стиль для светлой темы */
+#shipping-table .north-america {
+    color: #f886d6; /* Цвет текста для светлой темы */
+}
+
+#shipping-table td {
+    color: #f97fd1; /* Цвет текста для чисел в светлой теме */
+}
+
+/* Стиль для тёмной темы */
+body.dark-theme #shipping-table .north-america {
+    color: #f8f6f4; /* Цвет текста для "North America" в тёмной теме */
+}
+
+body.dark-theme #shipping-table td {
+    color: #f0efef; /* Цвет текста для чисел в тёмной теме */
+}
+
+
+
+
+.return-quote {
+    background-color: #fce4ec;
+    border-left: 5px solid #e38da8;
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/* Стиль для тёмной темы */
+body.dark-theme #footer-container {
+    background-color: #5c3a5d;
+    color: #ffffff;
+}
+
+
+
+
+/* Общий стиль для корректного размещения футера */
+html, body {
+    height: 100%; /* Высота страницы */
+    margin: 0;
+}
+
+#footer-container {
+    background-color: #f9f8f8;
+    color: #191919;
+    text-align: center;
+    padding: 20px; /* Оптимальный отступ внутри футера */
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body > main {
+    flex: 1; /* Заставляет основной контент растягиваться */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Размещаем контент сверху вниз */
+}
+
+footer {
+    position: relative; /* Футер будет всегда внизу */
+    margin-top: auto; /* Заставляет футер перемещаться вниз при недостатке контента */
+}
+
+
+
+
+
+#navbar {
+    margin-top: 10px;
+}/* Для светлой темы */
+/* Для светлой темы */
+body.light-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251); /* Цвет текста для светлой темы */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme .navbar-nav .nav-link:hover {
+    background-color: #bb8ca9cc; /* Цвет фона при наведении */
+    color: rgb(253, 167, 251); /* Цвет текста при наведении */
+    border-radius: 4px; /* Радиус скругления для квадрата */
+}
+
+/* Для темной темы */
+body.dark-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251); /* Цвет текста для темной темы */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .navbar-nav .nav-link:hover {
+    background-color: #d0a4c0cc; /* Цвет фона при наведении */
+    color: rgb(253, 167, 251); /* Цвет текста при наведении */
+    border-radius: 4px; /* Радиус скругления для квадрата */
+}
+
+/* Для активных ссылок в светлой теме */
+body.light-theme .navbar-nav .nav-item.active .nav-link {
+    color: rgb(4, 4, 4); /* Цвет текста для активной ссылки в светлой теме */
+}
+
+/* Для активных ссылок в темной теме */
+body.dark-theme .navbar-nav .nav-item.active .nav-link {
+    color: rgb(9, 9, 9); /* Цвет текста для активной ссылки в темной теме */
+}
+
+/* Для навигации (мобильная версия) */
+body.light-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251);
+}
+
+body.dark-theme .navbar-nav .nav-link {
+    color: rgb(253, 167, 251);
+}
+
+body.dark-theme .navbar-nav .nav-link:hover {
+    background-color: #f5a0d6cc;
+    color: rgb(253, 167, 251);
+    border-radius: 4px;
+}
+
+
+/* Начальный стиль для светлой темы */
+.blockquote {
+    color: #fa90df;  /* Черный текст */
+    margin-top: 20px;
+}
+
+/* Стили для темной темы */
+.blockquote-dark {
+    color: #fefbfb;  /* Белый текст для темной темы */
+    margin-top: 20px;
+}
+.book-item {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.book-title {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.book-author {
+    font-size: 14px;
+    color: gray;
+}
